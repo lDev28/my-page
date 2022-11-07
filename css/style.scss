@@ -20,7 +20,6 @@ body.active {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	// padding: 0px 10px;
 	height: 100%;
 	margin: 0px auto;
 }
@@ -38,7 +37,7 @@ body.active {
 	height: 70px;
 	top: 0;
 	left: 0;
-	background-color: $maincolor;
+	// background-color: $maincolor;
 	z-index: 3;
 }
 
@@ -67,9 +66,14 @@ body.active {
 	}
 
 	&__logo img {
-		width: 60px;
-		height: 60px;
+		width: 50px;
+		height: 50px;
 		border-radius: 50%;
+		transition: .3s;
+	}
+
+	&__logo img:hover {
+		transform: scale(1.07);
 	}
 
 	&__list {
@@ -83,11 +87,42 @@ body.active {
 	&__list li {
 		list-style: none;
 		margin: 0px 0px 0px 30px;
+		position: relative;
 	}
 
 	&__link {
 		text-decoration: none;
-		color: $white;
+		color: $black;
+	}
+
+	&__link::before {
+		content: '[';
+		top: 8px;
+		left: 10px;
+		font-size: 0.001px;
+		position: absolute;
+		transition: .3s;
+	}
+
+	&__link::after {
+		content: ']';
+		top: 8px;
+		right: 10px;
+		font-size: 0.001px;
+		position: absolute;
+		transition: .3s;
+	}
+
+	&__list li:hover &__link::before {
+		top: -3px;
+		left: -10px;
+		font-size: 20px;
+	}
+
+	&__list li:hover &__link::after {
+		top: -3px;
+		right: -10px;
+		font-size: 20px;
 	}
 
 	&__contact {
@@ -100,10 +135,26 @@ body.active {
 	}
 
 	.contact {
+		&__icon {
+			margin: 5px;
+			width: 40px;
+			height: 40px;
+			text-decoration: none;
+		}
 
-		&__icons {}
+		&__icon img {
+			width: 40px;
+			height: 40px;
+			transition: .3s;
+		}
 
-		&__number {}
+		&__icon img:hover {
+			transform: scale(1.1);
+		}
+
+		&__number {
+			margin: 5px;
+		}
 
 		&__btn {
 			margin: 0px 0px 0px 10px;
@@ -118,7 +169,20 @@ body.active {
 }
 
 @media only screen and (max-width: 750px) {
+	.header::before {
+		height: 60px;
+	}
+
 	.header {
+
+		&__body {
+			height: 60px;
+		}
+
+		&__logo img {
+			width: 50px;
+			height: 50px;
+		}
 
 		&__burger::before,
 		&__burger::after {
@@ -177,7 +241,7 @@ body.active {
 			left: 0;
 			width: 300%;
 			height: 300%;
-			background-color: $black;
+			background-color: $maincolor;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -187,6 +251,8 @@ body.active {
 
 		&__list {
 			flex-flow: column;
+			align-items: center;
+			justify-content: center;
 		}
 
 		&__menu.active {
@@ -199,6 +265,9 @@ body.active {
 		}
 	}
 
+}
+
+@media only screen and (max-width: 850px) {
 	.contact {
 		display: none;
 	}
@@ -209,7 +278,9 @@ body.active {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	// position: relative;
+	// background: url(../img/main-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
 	padding: 70px 0px 0px 0px;
@@ -243,6 +314,15 @@ body.active {
 		width: 50%;
 	}
 
+	&__title {
+		// color: $white;
+		font-size: 60px;
+	}
+
+	&__subtitle {
+		// color: $white;
+	}
+
 	&__gallery {
 		display: flex;
 		flex-flow: column;
@@ -250,7 +330,6 @@ body.active {
 		justify-content: center;
 		height: 100%;
 		width: 50%;
-		// background: url(../img/banner1.jpg);
 		background-size: cover;
 		padding: 0px 0px 0px 10px;
 	}
@@ -276,4 +355,5 @@ body.active {
 	align-items: flex-end;
 	width: 100%;
 	background-color: $black;
+	color: $white;
 }

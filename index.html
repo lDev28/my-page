@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="sources/icons/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
-	<title>BURGER</title>
+	<title>ArslanG</title>
 </head>
 
 <body>
@@ -15,35 +16,39 @@
 			<div class="container">
 				<div class="header__body">
 					<a href="#" class="header__logo">
-						<img src="img/myLogo.png" alt="lDev28">
+						<img src="sources/icons/myLogo.png" alt="lDev28">
 					</a>
-					<div class="header__burger" onclick="myBurger()">
+					<div class="header__burger" id="burgerMenu">
 						<span></span>
 					</div>
 					<nav class="header__menu">
 						<ul class="header__list">
 							<li>
-								<a href="#" class="header__link">About</a>
+								<a href="#" class="header__link">Home</a>
 							</li>
 							<li>
 								<a href="#" class="header__link">About</a>
 							</li>
 							<li>
-								<a href="#" class="header__link">About</a>
+								<a href="#" class="header__link">Blog</a>
 							</li>
 							<li>
-								<a href="#" class="header__link">About</a>
+								<a href="#" class="header__link">Portfolio</a>
 							</li>
 							<li>
-								<a href="#" class="header__link">About</a>
-							</li>
-							<li>
-								<a href="#" class="header__link">About</a>
+								<a href="#" class="header__link">Contact</a>
 							</li>
 						</ul>
 					</nav>
 					<div class="header__contact contact">
-						<div class="contact__icons"></div>
+						<div class="contact__icons">
+							<a href="https://github.com/lDev28" class="contact__icon">
+								<img src="sources/icons/github.png" title="github" alt="github">
+							</a>
+							<a href="#" class="contact__icon">
+								<img src="sources/icons/instagram.png" title="instagram">
+							</a>
+						</div>
 						<p class="contact__number">+993 65 206636</p>
 						<button class="contact__btn">text me</button>
 					</div>
@@ -57,8 +62,8 @@
 			<div class="container">
 				<div class="banner__row">
 					<div class="banner__main">
-						<h1>ArslanG</h1>
-						<p>Успех - это результат тяжелого труда!</p>
+						<h1 class="banner__title">ArslanG</h1>
+						<p class="banner__subtitle">Успех - это результат тяжелого труда!</p>
 					</div>
 					<div class="banner__gallery">
 						<img src="img/banner1.jpg">
@@ -71,10 +76,7 @@
 
 		<footer class="footer">
 			<div class="container">
-				<p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non autem dolore odit
-					officia dolorem incidunt,
-					explicabo maiores recusandae libero officiis perspiciatis aperiam at numquam hic quod, veritatis
-					accusamus. Laborum, dolorem.</p>
+				<p>Copyright © Арслан Гараев 2022.</p>
 			</div>
 		</footer>
 	</div>
