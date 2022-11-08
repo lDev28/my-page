@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #000a1142 2px 2px 15px;
+  padding: 10px;
+  margin: 0px 0px 20px 0px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000a11;
+}
+.card__img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 550px) {
+  .card {
+    flex-flow: column;
+  }
+  .card__content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__title {
+    text-align: center;
+  }
+  .card__subtitle {
+    text-align: center;
+  }
+}

@@ -1,0 +1,59 @@
+$maincolor: #3bc8ff;
+$black: #000a11;
+$white: #edf4ff;
+
+.portfolio {
+
+
+	&__body {}
+}
+
+.card {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	box-shadow: #000a1142 2px 2px 15px;
+	padding: 10px;
+	margin: 0px 0px 20px 0px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: $black;
+
+	&__img {
+		max-width: 200px;
+		max-height: 200px;
+		margin: 10px;
+		border-radius: 10px;
+	}
+
+	&__content {}
+
+	&__title {}
+
+	&__subtitle {}
+}
+
+
+@media only screen and (max-width: 550px) {
+	.card {
+		flex-flow: column;
+
+		&__img {}
+
+		&__content {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__title {
+			text-align: center;
+		}
+
+		&__subtitle {
+			text-align: center;
+		}
+	}
+}
