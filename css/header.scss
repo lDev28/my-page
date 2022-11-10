@@ -66,6 +66,8 @@ $white: #edf4ff;
 	}
 
 	&__link {
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
 		text-decoration: none;
 		color: $black;
 	}
@@ -89,15 +91,15 @@ $white: #edf4ff;
 	}
 
 	&__list li:hover &__link::before {
-		top: -3px;
+		top: 0;
 		left: -10px;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	&__list li:hover &__link::after {
-		top: -3px;
+		top: 0;
 		right: -10px;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	&__contact {
@@ -129,6 +131,8 @@ $white: #edf4ff;
 
 		&__number {
 			margin: 5px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
 		}
 
 		&__btn {
@@ -138,6 +142,21 @@ $white: #edf4ff;
 			font-size: 13px;
 			border-radius: 12px;
 			border: none;
+			background-color: $maincolor;
+			transition: all .3s;
+			cursor: pointer;
+		}
+
+		&__btn:hover,
+		&__btn:focus {
+			margin-top: -5px;
+			box-shadow: 0 2px 0px 0 $black;
+		}
+
+		&__btn:active {
+			margin-top: -2px;
+			box-shadow: 0 1px 0px 0 $black;
+			transition: all .1s;
 		}
 	}
 

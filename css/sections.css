@@ -1,0 +1,86 @@
+.about-me {
+  width: 100%;
+  background-color: #000a116f;
+  background-image: url(../img/aboutbg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px 0px 20px 0px;
+  position: relative;
+}
+
+.about {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.about__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #edf4ff;
+  margin-bottom: 10px;
+}
+.about__icon-block {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.about__icon {
+  width: 60px;
+  position: relative;
+}
+.about__icon-def {
+  color: #edf4ff;
+  font-size: 50px;
+  margin-top: -30px;
+}
+.about__subtitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  text-align: center;
+  color: #edf4ff;
+}
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #000a1142 2px 2px 15px;
+  padding: 10px;
+  margin: 0px 0px 20px 0px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000a11;
+}
+.card__img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover .card__img {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 550px) {
+  .card {
+    flex-flow: column;
+  }
+  .card__content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__title {
+    text-align: center;
+  }
+  .card__subtitle {
+    text-align: center;
+  }
+}

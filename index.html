@@ -9,7 +9,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/cards.css">
+	<link rel="stylesheet" href="css/sections.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 	<title>ArslanG</title>
 </head>
 
@@ -66,7 +72,7 @@
 				<div class="banner__row">
 					<div class="banner__main">
 						<h1 class="banner__title">ArslanG</h1>
-						<p class="banner__subtitle">Успех - это результат тяжелого труда!</p>
+						<p class="banner__subtitle">Приветствую Вас на своем сайте-портфолио. Меня зовут Арслан.</p>
 					</div>
 					<div class="banner__gallery">
 						<img src="img/banner1.jpg">
@@ -76,7 +82,35 @@
 		</main>
 
 
-		<div class="portfoli">
+		<section class="about-me">
+			<div class="container">
+				<div class="about">
+					<h1 class="about__title">ОБО МНЕ</h1>
+					<div class="about__icon-block">
+						<span class="about__icon-def">______</span>
+						<img class="about__icon" src="sources/icons/person_FILL0_wght400_GRAD0_opsz48.png">
+						<span class="about__icon-def">______</span>
+					</div>
+					<p class="about__subtitle">
+						Занимаюсь HTML-версткой сайтов. У меня полностью кроссбраузерная, адаптивная и валидная верстка.
+						Для
+						обеспечения выполнения требований, предъявляемых к верстке сайта в процессе работы над проектом я
+						использую сборщик проектов Gulp для автоматизации процесса верстки, препроцессоры Less/Sass для
+						ускоренной стилизации сайта и более гибкого кода, шаблонизатор Pug, Pixel Perfect для верстки,
+						совпадающей с предоставленным макетом «пиксель в пиксель», БЭМ, Bootstrap, Smartgrid и
+						media-запросы
+						для адаптивной верстки сайта. Динамика сайта организуется собственным jQuery кодом или настроенными
+						плагинами. В конце работы осуществляется проверка отображения верстки в различных браузерах на
+						разных
+						устройствах, код проверяется валидатором на соответствие стандартам и устраняются выявленные
+						ошибки.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="portfolio">
 			<div class="container">
 				<div class="cards__body">
 
@@ -102,7 +136,7 @@
 
 				</div>
 			</div>
-		</div>
+		</section>
 
 
 		<footer class="footer">

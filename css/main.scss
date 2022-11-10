@@ -33,19 +33,21 @@ $white: #edf4ff;
 	&__main {
 		display: flex;
 		flex-flow: column;
-		align-content: space-between;
+		align-content: center;
 		justify-content: center;
 		height: 100%;
 		width: 50%;
 	}
 
 	&__title {
-		// color: $white;
+		font-family: 'Roboto', sans-serif;
 		font-size: 60px;
 	}
 
 	&__subtitle {
-		// color: $white;
+		font-family: 'Roboto Slab', serif;
+		font-size: 25px;
+		margin: 0px 0px 0px 0px;
 	}
 
 	&__gallery {

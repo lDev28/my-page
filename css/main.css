@@ -24,13 +24,19 @@
 .banner__main {
   display: flex;
   flex-flow: column;
-  align-content: space-between;
+  align-content: center;
   justify-content: center;
   height: 100%;
   width: 50%;
 }
 .banner__title {
+  font-family: "Roboto", sans-serif;
   font-size: 60px;
+}
+.banner__subtitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  margin: 0px 0px 0px 0px;
 }
 .banner__gallery {
   display: flex;

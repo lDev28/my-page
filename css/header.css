@@ -55,6 +55,8 @@
   transition: 0.3s;
 }
 .header__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   text-decoration: none;
   color: #000a11;
 }
@@ -75,14 +77,14 @@
   transition: 0.3s;
 }
 .header__list li:hover .header__link::before {
-  top: -3px;
+  top: 0;
   left: -10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .header__list li:hover .header__link::after {
-  top: -3px;
+  top: 0;
   right: -10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .header__contact {
   position: relative;
@@ -108,6 +110,8 @@
 }
 .header .contact__number {
   margin: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 .header .contact__btn {
   margin: 0px 0px 0px 10px;
@@ -116,6 +120,18 @@
   font-size: 13px;
   border-radius: 12px;
   border: none;
+  background-color: #3bc8ff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.header .contact__btn:hover, .header .contact__btn:focus {
+  margin-top: -5px;
+  box-shadow: 0 2px 0px 0 #000a11;
+}
+.header .contact__btn:active {
+  margin-top: -2px;
+  box-shadow: 0 1px 0px 0 #000a11;
+  transition: all 0.1s;
 }
 
 @media only screen and (max-width: 750px) {
