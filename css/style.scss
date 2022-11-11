@@ -33,12 +33,6 @@ body.active {
 }
 
 
-
-
-.content {
-	margin: 90px 0px 0px 0px;
-}
-
 .footer {
 	flex: 1 1 auto;
 	display: flex;
@@ -46,4 +40,5 @@ body.active {
 	width: 100%;
 	background-color: $black;
 	color: $white;
+	font-family: 'Roboto', sans-serif;
 }

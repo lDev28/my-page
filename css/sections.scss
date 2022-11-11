@@ -121,3 +121,75 @@ $white: #edf4ff;
 		}
 	}
 }
+
+
+
+
+.contact {
+	width: 100%;
+	background-color: #000a1113;
+	padding: 50px 0px 30px 0px;
+}
+
+.contacts {
+
+	&__info {
+		width: 50%;
+	}
+
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		font-size: 32px;
+		color: $black;
+		text-decoration: none;
+		margin: 0px 0px 10px 0px;
+	}
+
+	&__subtitle {
+		font-family: 'Roboto', sans-serif;
+		color: $black;
+		text-decoration: none;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__card {
+		text-decoration: none;
+	}
+
+	&__form {}
+}
+
+.contact-card {
+	display: flex;
+	flex-flow: row nowrap;
+	// justify-content: center;
+	align-items: center;
+	margin: 0px 0px 30px 0px;
+	cursor: pointer;
+
+	&__icon {
+		width: 50px;
+	}
+
+	&__content {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 0px 0px 0px 20px;
+	}
+
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		color: $black;
+		text-decoration: none;
+		margin: 0px 0px 10px 0px;
+	}
+
+	&__subtitle {
+		font-family: 'Roboto', sans-serif;
+		color: $black;
+		text-decoration: none;
+		margin: 0px 0px 0px 0px;
+	}
+}

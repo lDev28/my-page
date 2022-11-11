@@ -111,7 +111,7 @@ $white: #edf4ff;
 		flex-flow: row nowrap;
 	}
 
-	.contact {
+	.head-contact {
 		&__icon {
 			margin: 5px;
 			width: 40px;
@@ -262,7 +262,7 @@ $white: #edf4ff;
 }
 
 @media only screen and (max-width: 850px) {
-	.contact {
+	.head-contact {
 		display: none;
 	}
 }

@@ -94,26 +94,26 @@
   justify-content: space-between;
   flex-flow: row nowrap;
 }
-.header .contact__icon {
+.header .head-contact__icon {
   margin: 5px;
   width: 40px;
   height: 40px;
   text-decoration: none;
 }
-.header .contact__icon img {
+.header .head-contact__icon img {
   width: 40px;
   height: 40px;
   transition: 0.3s;
 }
-.header .contact__icon img:hover {
+.header .head-contact__icon img:hover {
   transform: scale(1.1);
 }
-.header .contact__number {
+.header .head-contact__number {
   margin: 5px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-.header .contact__btn {
+.header .head-contact__btn {
   margin: 0px 0px 0px 10px;
   height: 30px;
   width: 80px;
@@ -124,11 +124,11 @@
   transition: all 0.3s;
   cursor: pointer;
 }
-.header .contact__btn:hover, .header .contact__btn:focus {
+.header .head-contact__btn:hover, .header .head-contact__btn:focus {
   margin-top: -5px;
   box-shadow: 0 2px 0px 0 #000a11;
 }
-.header .contact__btn:active {
+.header .head-contact__btn:active {
   margin-top: -2px;
   box-shadow: 0 1px 0px 0 #000a11;
   transition: all 0.1s;
@@ -215,7 +215,7 @@
   }
 }
 @media only screen and (max-width: 850px) {
-  .contact {
+  .head-contact {
     display: none;
   }
 }
