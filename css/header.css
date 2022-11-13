@@ -113,25 +113,11 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-.header .head-contact__btn {
-  margin: 0px 0px 0px 10px;
-  height: 30px;
-  width: 80px;
-  font-size: 13px;
-  border-radius: 12px;
-  border: none;
-  background-color: #3bc8ff;
-  transition: all 0.3s;
-  cursor: pointer;
-}
 .header .head-contact__btn:hover, .header .head-contact__btn:focus {
   margin-top: -5px;
-  box-shadow: 0 2px 0px 0 #000a11;
 }
 .header .head-contact__btn:active {
   margin-top: -2px;
-  box-shadow: 0 1px 0px 0 #000a11;
-  transition: all 0.1s;
 }
 
 @media only screen and (max-width: 750px) {

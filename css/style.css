@@ -34,3 +34,25 @@ body.active {
   color: #edf4ff;
   font-family: "Roboto", sans-serif;
 }
+
+.button {
+  height: 30px;
+  width: 80px;
+  font-size: 13px;
+  border-radius: 12px;
+  border: none;
+  background-color: #3bc8ff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  top: 5px;
+  box-shadow: 0 2px 0px 0 #000a11;
+}
+
+.button:active {
+  box-shadow: 0 1px 0px 0 #000a11;
+  transition: all 0.1s;
+}

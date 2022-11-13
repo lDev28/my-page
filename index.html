@@ -59,7 +59,7 @@
 							</a>
 						</div>
 						<p class="head-contact__number">+993 65 206636</p>
-						<button class="head-contact__btn">text me</button>
+						<button class="head-contact__btn button">text me</button>
 					</div>
 				</div>
 
@@ -142,51 +142,85 @@
 			<div class="container">
 				<div class="contacts">
 					<div class="contacts__info">
-						<h1 class="contacts__title">Мои контакты</h1>
-						<p class="contacts__subtitle">Всегда на связи</p>
+						<h1 class="contacts__title">My contacts</h1>
+						<p class="contacts__subtitle">always online</p>
 
-						<div class="contacts__card contact-card">
-							<img src="sources/icons/email.png" class="contact-card__icon">
-							<div class="contact-card__content">
-								<h2 class="contact-card__title">Email</h2>
-								<p class="contact-card__subtitle">arslan_28.03@inbox.ru</p>
+						<div class="contacts__cards">
+
+							<div class="contacts__card contact-card">
+								<img src="sources/icons/phone.png" class="contact-card__icon">
+								<div class="contact-card__content">
+									<h2 class="contact-card__title">Phone number</h2>
+									<p class="contact-card__subtitle">+993 65 206636</p>
+								</div>
 							</div>
+
+							<div class="contacts__card contact-card">
+								<img src="sources/icons/email.png" class="contact-card__icon">
+								<div class="contact-card__content">
+									<h2 class="contact-card__title">Email</h2>
+									<p class="contact-card__subtitle">arslan_28.03@inbox.ru</p>
+								</div>
+							</div>
+
+							<a href="https://t.me/#Arslan..." class="contacts__card contact-card">
+								<img src="sources/icons/telegram.png" class="contact-card__icon">
+								<div class="contact-card__content">
+									<h2 class="contact-card__title">Telegram</h2>
+									<p class="contact-card__subtitle">https://t.me/#Arslan...</p>
+								</div>
+							</a>
+
+							<a href="https://www.instagram.com/arslan_28.03" class="contacts__card contact-card">
+								<img src="sources/icons/instagram.png" class="contact-card__icon">
+								<div class="contact-card__content">
+									<h2 class="contact-card__title">Instagram</h2>
+									<p class="contact-card__subtitle">arslan_28.03</p>
+								</div>
+							</a>
+
+							<a href="https://vk.com/arslangdev" class="contacts__card contact-card">
+								<img src="sources/icons/vk.png" class="contact-card__icon">
+								<div class="contact-card__content">
+									<h2 class="contact-card__title">VK</h2>
+									<p class="contact-card__subtitle">https://vk.com/arslangdev</p>
+								</div>
+							</a>
+
+							<a href="https://github.com/lDev28" class="contacts__card contact-card">
+								<img src="sources/icons/github.png" class="contact-card__icon">
+								<div class="contact-card__content">
+									<h2 class="contact-card__title">Github</h2>
+									<p class="contact-card__subtitle">https://github.com/lDev28</p>
+								</div>
+							</a>
+
 						</div>
 
-						<a href="https://t.me/#Arslan..." class="contacts__card contact-card">
-							<img src="sources/icons/telegram.png" class="contact-card__icon">
-							<div class="contact-card__content">
-								<h2 class="contact-card__title">Telegram</h2>
-								<p class="contact-card__subtitle">https://t.me/#Arslan...</p>
-							</div>
-						</a>
-
-						<a href="https://www.instagram.com/arslan_28.03" class="contacts__card contact-card">
-							<img src="sources/icons/instagram.png" class="contact-card__icon">
-							<div class="contact-card__content">
-								<h2 class="contact-card__title">Instagram</h2>
-								<p class="contact-card__subtitle">arslan_28.03</p>
-							</div>
-						</a>
-
-						<a href="https://vk.com/arslangdev" class="contacts__card contact-card">
-							<img src="sources/icons/vk.png" class="contact-card__icon">
-							<div class="contact-card__content">
-								<h2 class="contact-card__title">VK</h2>
-								<p class="contact-card__subtitle">https://vk.com/arslangdev</p>
-							</div>
-						</a>
-
-						<a href="https://github.com/lDev28" class="contacts__card contact-card">
-							<img src="sources/icons/github.png" class="contact-card__icon">
-							<div class="contact-card__content">
-								<h2 class="contact-card__title">Github</h2>
-								<p class="contact-card__subtitle">https://github.com/lDev28</p>
-							</div>
-						</a>
-
 					</div>
-					<form class="contacts__form" action="#"></form>
+
+
+					<form class="contacts__form message-form" action="#">
+						<h1 class="message-form__title">Text me</h1>
+						<div class="message-form__group">
+							<input type="text" name="name" id="form-name" class="message-form__input" placeholder=" ">
+							<label for="name" class="message-form__label">Your name</label>
+						</div>
+						<div class="message-form__group">
+							<input type="email" name="email" id="form-email" class="message-form__input" placeholder=" ">
+							<label for="email" class="message-form__label">Your Email</label>
+						</div>
+						<div class="message-form__group">
+							<input type="tel" name="number" id="form-number" class="message-form__input" placeholder=" ">
+							<label for="number" class="message-form__label">Your phone number</label>
+						</div>
+						<div class="message-form__group">
+							<label for="message" class="message-form__label">Your message</label>
+							<textarea name="message" id="form-message" class="message-form__input form-message"
+								placeholder=" "></textarea>
+						</div>
+						<button id="form-btn" class="message-form__btn button">Send</button>
+					</form>
 				</div>
 			</div>
 		</section>
