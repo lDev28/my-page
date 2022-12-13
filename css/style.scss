@@ -67,3 +67,29 @@ body.active {
 	box-shadow: 0 1px 0px 0 $black;
 	transition: all .1s;
 }
+
+
+#btnTop {
+	width: 40px;
+	min-height: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	background-color: $white;
+	z-index: 1000;
+	transition: .3s;
+	box-shadow: #1c23236a 2px 2px 2px 2px;
+	display: none;
+	opacity: 0;
+}
+
+#btnTop:hover {
+	transform: scale(1.15);
+}
+
+#btnTop img {
+	max-width: 100%;
+}
