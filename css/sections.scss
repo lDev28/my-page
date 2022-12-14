@@ -60,44 +60,199 @@ $white: #edf4ff;
 
 .portfolio {
 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 10px;
 
-	&__body {}
+	&__body {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .card {
-	// margin-top: 100%;
+	position: relative;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+	flex-flow: column;
+	justify-content: flex-start;
 	align-items: center;
 	box-shadow: #000a1142 2px 2px 15px;
-	padding: 10px;
-	margin: 0px 0px 20px 0px;
-	border-radius: 20px;
+	width: 30%;
+	height: 400px;
+	// padding: 10px;
+	margin: 10px;
 	text-decoration: none;
-	color: $black;
+	color: $white;
+	background-color: $black;
+	overflow: hidden;
+
+	&__decor {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+
+	&__label {
+		z-index: 3;
+		color: $maincolor;
+		opacity: 0;
+		transition: all .3s;
+	}
+
+	&__box {
+		min-height: 340px;
+		max-height: 340px;
+		overflow: hidden;
+	}
+
+	&__box::before,
+	&__box::after {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: $maincolor;
+		transition: all .8s;
+		z-index: 3;
+	}
+
+	&__box::before {
+		top: 5px;
+		left: 0;
+		width: 0.0000001px;
+		height: 3px;
+	}
+
+	&__box::after {
+		bottom: 5px;
+		right: 0;
+		width: 0.0000001px;
+		height: 3px;
+	}
 
 	&__img {
-		max-width: 200px;
-		max-height: 200px;
-		margin: 10px;
-		border-radius: 10px;
+		min-height: 340px;
+		max-height: 340px;
+		min-width: 100%;
 		overflow: hidden;
 		transition: .5s;
 	}
 
 
-	&__content {}
+	&__content {
+		width: 90%;
+		height: 60px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 4;
+	}
 
-	&__title {}
+	&__title {
+		margin: 0;
+	}
 
-	&__subtitle {}
+	&__link {
+		text-decoration: none;
+		color: $maincolor;
+	}
+
+	&__btn {
+		background-color: transparent;
+		color: $maincolor;
+		border: $maincolor solid 2px;
+		border-radius: 5px;
+		height: 30px;
+		width: 60px;
+		transition: all .3s;
+		cursor: pointer;
+	}
+}
+
+.card__btn:hover {
+	background-color: $maincolor;
+}
+
+.card__btn:hover .card__link {
+	color: $black;
+}
+
+.card__btn:active .card__link {
+	color: $black;
+}
+
+.card:hover {
+
+	.card__box::before,
+	.card__box::after {
+		width: 100%;
+	}
 }
 
 .card:hover .card__img {
 	transform: scale(1.05);
 }
 
+.card:hover .card__label {
+	opacity: 1;
+}
+
+.card__decor::before,
+.card__decor::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 400px;
+	height: 400px;
+	background-color: rgba($color: #000000, $alpha: .45);
+	transform: rotate(45deg);
+	transition: all .3s;
+	z-index: 2;
+}
+
+.card__decor::before {
+	left: 200%;
+}
+
+.card__decor::after {
+	right: 200%;
+}
+
+.card:hover .card__decor::after {
+	right: 25%;
+}
+
+.card:hover .card__decor::before {
+	left: 25%;
+}
+
+@media only screen and (max-width: 850px) {
+	.card {
+		width: 45%;
+
+		&__content {
+			display: flex !important;
+			flex-flow: row nowrap !important;
+			justify-content: space-between !important;
+			align-items: center !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.card {
+		width: 80%;
+	}
+}
 
 @media only screen and (max-width: 550px) {
 	.about-me {

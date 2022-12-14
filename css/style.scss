@@ -26,6 +26,19 @@ body.active {
 	overflow: auto;
 }
 
+.wrapper::-webkit-scrollbar {
+	width: 5px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+	background-color: $black;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+	background-color: $maincolor;
+	border-radius: 5px;
+}
+
 .container {
 	max-width: 1100px;
 	margin: 0px auto;
