@@ -14,20 +14,23 @@
   display: flex;
   flex-flow: column;
 }
-.banner__row {
+.banner__container {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
 }
-.banner__main {
+.banner__body {
   display: flex;
   flex-flow: column;
   align-content: center;
   justify-content: center;
   height: 100%;
   width: 50%;
+  z-index: 5;
 }
 .banner__title {
   font-family: "Roboto", sans-serif;
@@ -38,18 +41,86 @@
   font-size: 25px;
   margin: 0px 0px 0px 0px;
 }
-.banner__gallery {
-  display: flex;
-  flex-flow: column;
-  align-content: space-between;
-  justify-content: center;
-  height: 100%;
-  width: 50%;
-  background-size: cover;
-  padding: 0px 0px 0px 10px;
+.banner__slider {
+  width: 100%;
+  min-height: 100%;
 }
-.banner__gallery img {
-  max-width: 100%;
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider__track {
+  position: absolute;
+  transition: 700ms;
+  width: calc(100% * 5);
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+.slider__slide {
+  width: 100%;
+  height: 100%;
+}
+.slider__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0;
+}
+.slider__viewSlide {
+  margin: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000a11;
+}
+.slider__btns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+#sliderViewport {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+#sliderViewSlider {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+#sliderPrevBtn {
+  outline: none;
+  border: none;
+  background: transparent;
+  transform: rotate(-90deg);
+}
+
+#sliderNextBtn {
+  outline: none;
+  border: none;
+  background: transparent;
+  transform: rotate(90deg);
 }
 
 @media only screen and (max-width: 850px) {
